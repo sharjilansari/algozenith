@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  margin: 3.5rem;
+  border-radius: 8px;
+}
+
+.card__background {
+  width: 100%;
+  background: linear-gradient(to right, #d9d9d9, #a6b7f5),
+    url("./images/Group316.png");
+  background-blend-mode: screen;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card__container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.card__head {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.card__head h1 {
+  font-family: DM sans;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__head span {
+  font-family: rubik;
+}
+
+.original_price {
+  font-size: 3.5rem;
+  color: rgba(129, 129, 129, 1);
+  text-decoration: line-through;
+}
+
+.discount {
+  font-size: 4.5rem;
+  background: linear-gradient(to right, #3f6fc1, #05445e);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.card__body {
+  width: 100%;
+  background-color: #022534;
+}
+
+.card__text svg {
+  fill: #022534;
+  margin-right: 2rem;
+}
+
+.card__box {
+  font-family: DM sans;
+  font-size: 1.25rem;
+  display: flex;
+  margin-right: 1rem;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+.card__text {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__text p {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.card__btn {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.card__btn a {
+  display: grid;
+  margin-right: 2rem;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.375rem;
+}
+
+.card__join {
+  width: 100%;
+  color: #022534;
+  background: linear-gradient(to left, #dff6ff 50%, #ffffff);
+}
+
+.card__btn a:hover {
+  box-shadow: 0px 0px 200px 0px #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+
+@media (max-width:500px){
+    .card {
+        margin: 1.5rem;
+        border-radius: 8px;
+      }
+      .original_price {
+        font-size: 2.5rem;
+      }
+      .card__text svg {
+        margin-right: 1rem;
+      }
+      .card__box {
+        font-size: 1rem;
+        margin-right: 0rem;
+      }
+      .card__btn a {
+        padding: 1rem;
+        font-size: 1.375rem;
+      }
+      
+}
